@@ -97,9 +97,6 @@ static void *listen_sockets_arr(void *x)
         // check if poll failed
         if (r == -1)
         {
-            free(fds);
-            fds = NULL;
-
             // close all connections
             for (nfds_t i = 0; i < client_count; i++)
             {
