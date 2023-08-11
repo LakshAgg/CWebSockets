@@ -3,6 +3,23 @@ A simple implementation of web socket client in c using libcurl. *Note: requires
 
 This library contains the implementation of WebSocket client operations, including connecting to a WebSocket server, sending and receiving data, managing client connections, and handling callbacks for open, close, and message events.
 
+## Installation
+*Make sure libcurl version >= 7.86.0 is installed.*
+
+To install this library execute the following commands:
+```sh
+git clone https://github.com/LakshAgg/CWebSockets.git
+cd CWebSockets
+
+make
+sudo make install
+make clean
+```
+
+To uninstall execute `make uninstall`.
+
+Compile with `-lcwebsockets -lcurl `.
+
 ## Example
 Check out the [example](example.c) program which uses the Binance market stream and prints the latest trades for 10 seconds.
 
