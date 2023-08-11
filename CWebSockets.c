@@ -79,6 +79,8 @@ void close_wss_client(WSS_Client *client)
 
 static void *listen_sockets_arr(void *x)
 {
+    (void)x;
+    
     while (1)
     {
         pthread_mutex_lock(&lock);
