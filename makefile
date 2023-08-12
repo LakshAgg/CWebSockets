@@ -26,7 +26,7 @@ $(LIBRARY): $(OBJS)
 	ar rcs $@ $^
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $< -I$(INCLUDE_DIR)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
 	rm -f $(OBJS) $(LIBRARY)
