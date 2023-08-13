@@ -54,11 +54,8 @@ sudo make install && \
 echo "export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH" >> ~/.bashrc && \
 source ~/.bashrc
 
-# rename installed library from libcurl to libcurlexp. This will help avoid conflicts while linking.
-sudo mv /usr/local/lib/libcurl.so /usr/local/lib/libcurlexp.so && \
-
 # clean
 make clean && \
 
 echo "libcurl with wss has been installed successfully :)" && \
-echo "Use -lcurlexp while linking for this build." 
+echo "Use -lcurl while linking for this build." 
